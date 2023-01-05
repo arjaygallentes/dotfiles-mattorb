@@ -14,7 +14,8 @@ brew install --cask \
     keycastr \
     hammerspoon \
     whichspace \
-    amethyst
+    amethyst \
+    raycast
 
 # atreus help images
 ln -sf $(pwd)/hw/atreus/kaleidoscope_with_chrysalis $HOME/.config
