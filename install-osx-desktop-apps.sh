@@ -10,16 +10,9 @@ source .cisupport/is_ci.sh
 is_ci && export HOMEBREW_CASK_OPTS="--no-quarantine --appdir=/Applications"
 
 brew install --cask \
-    bartender \
     cd-to \
-    paw \
     keycastr \
     hammerspoon
-
-# Disabling nvalt which has a cask error atm.
-# Disabling arq where the cask does not seem to stay current
-
-# Disabling p4v where the binary appears to change without version revs (according to sha checksum comparison failures)
 
 # atreus help images
 ln -sf $(pwd)/hw/atreus/kaleidoscope_with_chrysalis $HOME/.config
@@ -28,7 +21,6 @@ ln -sf $(pwd)/hammerspoon $HOME/.hammerspoon
 
 # Yah . . . this works, svn download a sub-dir of a github repo to a dest dir
 svn export https://github.com/mattorb/keyboard/branches/customizations/hammerspoon hammerspoon/keyboard
-#svn export https://github.com/mattorb/keyboard/tree/customizations/hammerspoon hammerspoon/keyboard
 
 is_ci || osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/Hammerspoon.app", hidden:true}' > /dev/null
 is_ci || osascript -e 'tell application "System Events" to make login item at end with properties {path:"/Applications/nvALT.app", hidden:true}' > /dev/null
