@@ -44,14 +44,15 @@ brew "diff-so-fancy"
 brew "fzf"
 brew "parallel"
 brew "ripgrep"
-brew "swiftformat"
-brew "chisel"
-brew "hub"
 EOS
+
+#brew "swiftformat"
+#brew "chisel"
+#brew "hub"
 # exa, dust, multitime "Tenzer/tap/multitime" tap went bad: ref: http://tratt.net/laurie/src/multitime/
 
-brew install --cask alacritty
-brew install --cask swiftformat-for-xcode provisionql qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+#brew install --cask swiftformat-for-xcode provisionql qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+brew install --cask alacritty provisionql qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 # last tested ver: fish 3.4.1
 brew install fish
@@ -86,19 +87,4 @@ git config --global rebase.autoStash true
 cd src/listrepo
 ./build.sh
 cd ../../
-
-echo '1. Execute this to add ssh key (w/passphrase) to keychain:  ssh-add -K ~/.ssh/id_rsa'
-echo '2. Then git config --global user.name "Your Name"'
-echo '3. Then git config --global user.email "Your_Email@...com"'
-echo '4. Create a git Personal Access token, then:  "hub browse" and enter git user and Access token to configure hub to use that'
-echo '5. Install dropbox and Configure dropbox accounts'
-echo '6. Configure Slack accounts'
-echo '7. Configure nvalt storage backend /Dropbox/Notes and "plain text" format, set hide dock icon, show menu'
-echo '8. Install Air Mail from App Store and configure accounts'
-echo '9. Add Bartender license, configure bartender'
-echo '10. Configure Keepass'
-echo '11. Install IDEs'
-echo '12. Add cdto to finder toolbar:   Drag Applications/cd to.app onto the Finder toolbar while holding down the command(⌘) and option(⌥) keys'
-echo '13. Put a github token in ~/.fhub_token to enable the fhub repo navigation function.  Put additional orgs (to include their public repos) in ~/.fhub_orgs'
-echo '14. Launch Hammerspoon.  Set it to start on launch.   Enable Accessibility.'
 
