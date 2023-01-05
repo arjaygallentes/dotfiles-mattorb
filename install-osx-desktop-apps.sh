@@ -12,7 +12,9 @@ is_ci && export HOMEBREW_CASK_OPTS="--no-quarantine --appdir=/Applications"
 brew install --cask \
     cd-to \
     keycastr \
-    hammerspoon
+    hammerspoon \
+    whichspace \
+    amethyst
 
 # atreus help images
 ln -sf $(pwd)/hw/atreus/kaleidoscope_with_chrysalis $HOME/.config
