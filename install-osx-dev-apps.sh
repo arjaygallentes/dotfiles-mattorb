@@ -38,7 +38,6 @@ brewover git || true
 
 brew bundle --file=- <<-EOS
 tap "homebrew/cask"
-brew "ruby"
 brew "jq"
 brew "diff-so-fancy"
 brew "fzf"
