@@ -23,3 +23,5 @@ alias l 'exa -l -g --git'
 
 # Shows all timestamps in their full glory
 alias lf 'exa -guUmhl --git --time-style long-iso'
+
+starship init fish | source
