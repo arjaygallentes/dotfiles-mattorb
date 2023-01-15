@@ -1,7 +1,11 @@
+env:
+  TERM: xterm-256color
+
 import:
   # - "/Users/agallentes/.config/alacritty/flightdeck-lunar.yml"
-  - "/Users/agallentes/.config/alacritty/flightdeck-nebula.yml"
+  # - "/Users/agallentes/.config/alacritty/flightdeck-nebula.yml"
   # - "/Users/agallentes/.config/alacritty/solarized_dark.yml"
+- ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
 # Window Customization
 window:
   dimensions:
@@ -17,13 +21,13 @@ window.dynamic_title: true
 # Font Customization
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: JetBrains Mono
     style: Regular
   bold:
-    family: JetBrainsMono Nerd Font
+    family: JetBrains Mono
     style: Medium
   italic:
-    family: JetBrainsMono Nerd Font
+    family: JetBrains Mono
     style: Italic
   size: 18
 
